@@ -1,0 +1,22 @@
+{
+  "name": "@ryanburnette/contact-form-endpoint",
+  "version": "1.0.0",
+  "description": "A mountable endpoint that provides a contact form endpoint with validation and email notification.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "gitea@code.ryanburnette.com:ryanburnette/contact-form-endpoint.git"
+  },
+  "author": "Ryan Burnette <ryan.burnette@gmail.com> (https://ryanburnette.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@ryanburnette/validator-factory": "^1.2.0",
+    "ejs": "^2.6.1",
+    "hat": "0.0.3",
+    "mailgun-js": "^0.22.0",
+    "striptags": "^3.1.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  }
+}
