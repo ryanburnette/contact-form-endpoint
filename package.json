@@ -1,6 +1,6 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mountable endpoint that provides a contact form endpoint with validation and email notification.",
   "main": "index.js",
   "repository": {
@@ -10,7 +10,7 @@
   "author": "Ryan Burnette <ryan.burnette@gmail.com> (https://ryanburnette.com)",
   "license": "ISC",
   "dependencies": {
-    "@ryanburnette/validator-factory": "^2.0.0",
+    "@ryanburnette/validator-factory": "^2.0.2",
     "body-parser": "^1.19.0",
     "ejs": "^2.6.1",
     "express": "^4.17.0",
@@ -20,7 +20,7 @@
     "striptags": "^3.1.1"
   },
   "devDependencies": {
-    "@ryanburnette/merge-options": "^2.0.0",
+    "@ryanburnette/merge": "^1.0.0",
     "dotenv": "^8.0.0",
     "jest": "^24.8.0",
     "nodemon": "^1.19.0"
