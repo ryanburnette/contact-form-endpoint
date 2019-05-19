@@ -1,11 +1,11 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mountable endpoint that provides a contact form endpoint with validation and email notification.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "gitea@code.ryanburnette.com:ryanburnette/contact-form-endpoint.git"
+    "url": "https://code.ryanburnette.com/ryanburnette/merge.git"
   },
   "author": "Ryan Burnette <ryan.burnette@gmail.com> (https://ryanburnette.com)",
   "license": "ISC",
