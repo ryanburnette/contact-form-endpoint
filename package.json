@@ -1,7 +1,7 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "1.0.2",
-  "description": "A mountable endpoint that provides a contact form endpoint with validation and email notification.",
+  "version": "2.0.0",
+  "description": "A contact form API endpoint with validation and email delivery.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -16,14 +16,15 @@
     "express": "^4.17.0",
     "hat": "0.0.3",
     "lodash.isequal": "^4.5.0",
+    "lodash.isobject": "^3.0.2",
     "mailgun-js": "^0.22.0",
     "striptags": "^3.1.1"
   },
   "devDependencies": {
-    "@ryanburnette/merge": "^1.0.0",
     "dotenv": "^8.0.0",
     "jest": "^24.8.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "@ryanburnette/merge": "^1.0.0"
   },
   "engines": {
     "node": ">=6.9.0"
