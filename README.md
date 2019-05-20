@@ -1,5 +1,7 @@
 # @ryanburnette/[contact-form-endpoint][1]
 
+[![npm version](https://badge.fury.io/js/%40ryanburnette%2Fcontact-form-endpoint.svg)](https://badge.fury.io/js/%40ryanburnette%2Fcontact-form-endpoint)
+
 ## Usage
 
 ```js
