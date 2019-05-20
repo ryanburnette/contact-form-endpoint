@@ -12,9 +12,10 @@ var {constraints,notifications} = yaml.safeLoad(fs.readFileSync('./data/forms/co
 
 var notifications.html = {
   template: fs.readFileSync('./data/forms/contact-template.html.ejs', 'utf8'),
-  data: function () {
-    return new Promise(function (resolve,reject) {
-      resolve({});
+  bodyFilter: function (body) {
+    return new Promise(function (resolve) {
+      body.custom = 'foo';
+      resolve(body);
     })
   }
 };
