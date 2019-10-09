@@ -104,8 +104,7 @@ var endpoint = contactFormEndpoint.create({
 });
 ```
 
-[1]: https://code.ryanburnette.com/ryanburnette/contact-form-endpoint
-[2]: https://code.ryanburnette.com/ryanburnette/validator-factory
+[1]: https://www.npmjs.com/package/@ryanburnette/contact-form-endpoint
 [3]: https://github.com/ansman/validate.js
 [4]: https://www.npmjs.com/package/mailgun-js
 [5]: https://ejs.co
