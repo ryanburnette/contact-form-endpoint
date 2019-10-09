@@ -1,9 +1,5 @@
 'use strict';
 
-var ContactFormEndpoint = {};
-
-ContactFormEndpoint.email = require('./lib/email');
-ContactFormEndpoint.submit = require('./lib/submit');
-ContactFormEndpoint.create = require('./lib/create');
-
-module.exports = ContactFormEndpoint;
+module.exports.honeypot = require('./lib/honeypot');
+module.exports.email = require('./lib/email');
+module.exports.create = require('./lib/create');

@@ -1,7 +1,7 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "3.0.0",
-  "description": "A contact form API endpoint with validation and email delivery.",
+  "version": "4.0.0",
+  "description": "A contact form API endpoint with honeypot, validation, and email delivery.",
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -10,27 +10,23 @@
   "author": "Ryan Burnette <ryan.burnette@gmail.com> (https://ryanburnette.com)",
   "license": "ISC",
   "dependencies": {
-    "@ryanburnette/validator-factory": "^2.0.2",
     "body-parser": "^1.19.0",
-    "ejs": "^2.6.1",
-    "express": "^4.17.0",
-    "hat": "0.0.3",
-    "lodash.isequal": "^4.5.0",
-    "lodash.isobject": "^3.0.2",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
     "mailgun-js": "^0.22.0",
-    "striptags": "^3.1.1"
+    "striptags": "^3.1.1",
+    "validate.js": "^0.13.1"
   },
   "devDependencies": {
-    "dotenv": "^8.0.0",
-    "jest": "^24.8.0",
-    "nodemon": "^1.19.0",
-    "@ryanburnette/merge": "^1.0.0"
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
+    "jest": "^24.9.0"
   },
   "engines": {
     "node": ">=6.9.0"
   },
   "scripts": {
-    "test": "jest",
-    "testwatch": "jest --watch"
+    "test": "jest"
   }
 }
