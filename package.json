@@ -1,11 +1,11 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A contact form API endpoint with honeypot, validation, and email delivery.",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://code.ryanburnette.com/ryanburnette/merge.git"
+    "url": "https://github.com/ryanburnette/contact-form-endpoint.git"
   },
   "author": "Ryan Burnette <ryan.burnette@gmail.com> (https://ryanburnette.com)",
   "license": "ISC",
