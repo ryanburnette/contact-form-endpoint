@@ -53,10 +53,16 @@ app.use('/api/contact', contact);
 
 app.listen(3020, function() {
   axios
-    .post('http://localhost:3020/api/contact', {
-      name: 'Ryan Burnette',
-      email: 'ryan.burnette@gmail.com',
-      message: 'Hello'
+    .get('http://localhost:3020/api/contact/constraints')
+    .then(function(resp) {
+      console.log(resp.data);
+    })
+    .then(function() {
+      return axios.post('http://localhost:3020/api/contact/submit', {
+        name: 'Ryan Burnette',
+        email: 'ryan.burnette@gmail.com',
+        message: 'Hello'
+      });
     })
     .then(function(resp) {
       console.log(resp.status, resp.data);
