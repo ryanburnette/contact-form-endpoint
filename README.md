@@ -3,7 +3,8 @@
 [![repo](https://img.shields.io/badge/repository-Github-black.svg?style=flat-square)](https://github.com/ryanburnette/contact-form-endpoint)
 [![npm](https://img.shields.io/badge/package-NPM-green.svg?style=flat-square)](https://www.npmjs.com/package/@ryanburnette/contact-form-endpoint)
 
-A contact form API endpoint with honeypot, validation, and email delivery.
+A contact form API endpoint with honeypot, validation, email delivery, and hooks
+to extend.
 
 ## Usage
 
@@ -53,7 +54,7 @@ var endpoint = contactFormEndpoint.create({
   emails: [
     {
       from: 'Team <no-reply@mysite.com>',
-      to: '<%= data.name %> <<%= data.email %>>', // note that you can use EJS in any field
+      to: '<%= data.name %> <<%= data.email %>>', // you can use EJS in any field
       'h:Reply-To': '<%= data.name %> <<%= data.email %>>',
       subject: 'Thank you for your submission',
       html: '', // EJS HTML template
@@ -65,7 +66,7 @@ var endpoint = contactFormEndpoint.create({
 
 ## Mailgun
 
-The [mailgun-js][4] lib expects requires credentials.
+[mailgun-js][4] requires credentials.
 
 ```js
 var endpoint = contactFormEndpoint.create({
