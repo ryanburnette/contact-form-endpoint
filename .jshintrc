@@ -1,9 +1,4 @@
 {
   "node": true,
-  "esversion": 6,
-  "globals": {
-    "test": true,
-    "expect": true,
-    "describe": true
-  }
+  "esversion": 6
 }

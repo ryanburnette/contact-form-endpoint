@@ -29,20 +29,20 @@ var contact = contactFormEndpoint.create({
     subject: 'Thank you for your submission'
   },
   hooks: {
-    honeypot: function(req) {
+    honeypot: function (req) {
       console.log('honeypot hook');
     },
-    validation: function(req) {
+    validation: function (req) {
       console.log('validation hook');
     },
-    success: function(req) {
+    success: function (req) {
       console.log('success hook');
     },
-    emailSuccess: function(result) {
+    emailSuccess: function (result) {
       console.log('emailSuccess hook');
       process.exit();
     },
-    emailFail: function(err) {
+    emailFail: function (err) {
       console.log('emailFail hook');
       process.exit();
     }
@@ -51,23 +51,23 @@ var contact = contactFormEndpoint.create({
 
 app.use('/api/contact', contact);
 
-app.listen(3020, function() {
+app.listen(3020, function () {
   axios
     .get('http://localhost:3020/api/contact/constraints')
-    .then(function(resp) {
+    .then(function (resp) {
       console.log(resp.data);
     })
-    .then(function() {
+    .then(function () {
       return axios.post('http://localhost:3020/api/contact/submit', {
         name: 'Ryan Burnette',
         email: 'ryan.burnette@gmail.com',
         message: 'Hello'
       });
     })
-    .then(function(resp) {
+    .then(function (resp) {
       console.log(resp.status, resp.data);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       console.error(err.response.status, err.response.data);
     });
 });

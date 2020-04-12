@@ -1,6 +1,6 @@
 {
   "name": "@ryanburnette/contact-form-endpoint",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "A contact form API endpoint with honeypot, validation, email delivery, and hooks to extend.",
   "main": "index.js",
   "repository": {
